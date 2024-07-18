@@ -69,6 +69,8 @@
         // console.log(json);
         return json;
       }
+
+
       confirm().then(function (data) {
         document.getElementById("response").innerHTML = `<pre>${JSON.stringify(data, null, 4)}</pre>`;
       });

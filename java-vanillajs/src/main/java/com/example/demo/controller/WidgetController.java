@@ -83,13 +83,7 @@ public class WidgetController {
         return ResponseEntity.status(code).body(jsonObject);
     }
 
-    /**
-     * 인증성공처리
-     * @param request
-     * @param model
-     * @return
-     * @throws Exception
-     */
+    // 인증성공처리
     @RequestMapping(value = "/success", method = RequestMethod.GET)
     public String paymentRequest(HttpServletRequest request, Model model) throws Exception {
         return "/success";
